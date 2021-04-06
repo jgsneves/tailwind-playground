@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'hero-image': "url(../static/media/home-back.png)"
+        'hero-image': "url(../static/media/home-back.png)",
+        'content-image': "url(../static/media/home1.svg)",
       })
     },
     fontFamily: {
