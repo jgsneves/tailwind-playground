@@ -9,6 +9,8 @@ module.exports = {
     fontFamily: {
       'h1': ['Sofia Pro Black'],
       'h2': ['Sofia Pro Black'],
+      'h3': ['Sofia Pro Black'],
+      'h4': ['Sofia Pro Black'],
     }
   },
   variants: {},
