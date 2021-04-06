@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        max-width: 100vw;
+        background-color: #000;
+    }
+
+    @font-face {
+        font-family: Icomoon;
+        src: url('./static/fonts/icomoon.woff') format("woff");
+    }
+
+    @font-face {
+        font-family: Sofia Pro Black Az;
+        src: url('./static/fonts/Sofia Pro Black Az.otf') format("otf");
+    }
+
+    @font-face {
+        font-family: Sofia Pro Bold Az, sans-serif;
+        font-weight: 500;
+        font-size: 40px; 
+        src: url('./static/fonts/Sofia Pro Bold Az.otf') format("otf");
+    }
+
+    button {
+        background: linear-gradient(to right,#3e91b4 0%,#2d3c49 100%);
+        box-shadow: 0 5px 60px rgb(56 148 186 / 30%);
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        padding: 0 50px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.063rem;
+        color: #fff;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+}
