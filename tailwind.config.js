@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   purge: ["./public/**/*.html"],
   theme: {
@@ -5,13 +7,10 @@ module.exports = {
       backgroundImage: theme => ({
         'hero-image': "url(../static/media/home-back.png)",
         'content-image': "url(../static/media/home1.svg)",
-      })
+      }),
     },
     fontFamily: {
-      'h1': ['Sofia Pro Black'],
-      'h2': ['Sofia Pro Black'],
-      'h3': ['Sofia Pro Black'],
-      'h4': ['Sofia Pro Black'],
+      sofia: ['"Sofia Pro Black"', ...defaultTheme.fontFamily.sans],      
     }
   },
   variants: {},
